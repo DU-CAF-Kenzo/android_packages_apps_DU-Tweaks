@@ -57,15 +57,6 @@
   <string name="header_weather_summary">Включить отображение информации о погоде</string>
   <string name="weather_icon_pack_title">Стиль значков</string>
 
-  <!-- Immersive Recents -->
-  <string name="immersive_recents_title">Вид меню недавних приложений</string>
-  <string name="immersive_recents_summary">Изменить вид меню недавних приложений</string>
-  <string name="immersive_recents_dialog_title">Выберите вид меню недавних приложений</string>
-  <string name="immersive_recents_default">По умолчанию</string>
-  <string name="immersive_recents_fullscreen">На весь экран</string>
-  <string name="immersive_recents_statusbar">Только строка состояния</string>
-  <string name="immersive_recents_navbar">Только панель навигации</string>
-
   <!-- Clear-All recents FAB -->
   <string name="show_clear_all_recents_button_title">Кнопка «Очистить всё»</string>
   <string name="show_clear_all_recents_button_summary_on">Показывать кнопку \"Очистить всё\"</string>
@@ -515,6 +506,12 @@
   <string name="smartbar_config_backup_error_toast">Ошибка при сохранении профиля Smartbar</string>
   <string name="smartbar_config_restore_error_toast">Ошибка при восстановлении профиля Smartbar</string>
   <string name="navbar_buttons_alpha_title">Прозрачность кнопок</string>
+  <string name="smartbar_longpress_delay_title">Задержка долгого нажатия</string>
+  <string name="smartbar_longpress_delay_summary">Укажите, как долго система будет ждать, прежде чем реагировать на долгое нажатие</string>
+  <string name="smartbar_longpress_delay_default">Стандартная задержка (быстро)</string>
+  <string name="smartbar_longpress_delay_normal">Нормальная задержка</string>
+  <string name="smartbar_longpress_delay_long">Долгая задержка</string>
+  <string name="smartbar_custom_icon_size_title">Размер пользовательских иконок</string>
 
   <!-- Optional screenshot type -->
   <string name="screenshot_type_title">Тип скриншота</string>
@@ -545,8 +542,6 @@
   <string name="status_bar_battery_percentage_text_next">Рядом со значком</string>
   <string name="battery_tile_style_title">Стиль плитки батареи</string>
   <string name="status_bar_battery_style_tile_summary">Отображать плитку батареи как в строке состояния</string>
-  <string name="status_bar_charge_color_title">Цвет значка батареи в строке состояния во время зарядки</string>
-  <string name="status_bar_charge_color_summary">Установите цвет значка батареи во время зарядки</string>
   <string name="force_charge_battery_text_title">Процент зарядки батареи в строке состояния</string>
   <string name="force_charge_battery_text_summary_on">Показывать процент зарядки батареи вне значка во время зарядки</string>
   <string name="force_charge_battery_text_summary_off">Показывать процент зарядки батареи в значке во время зарядки</string>
@@ -555,6 +550,9 @@
   <string name="text_charging_symbol_default">Выключен</string>
   <string name="text_charging_symbol_flash">Молния</string>
   <string name="text_charging_symbol_tilde">Тильда</string>
+  <string name="status_bar_pulse_charging_battery_title">Пульсация индикатора батареи во время зарядки</string>
+  <string name="status_bar_pulse_charging_battery_summary_off">Только для стиля \"Сплошной круг\"</string>
+  <string name="status_bar_pulse_charging_battery_summary_on">Все стили поддерживают пульсацию</string>
 
   <!-- QS headers -->
   <string name="qs_header_category">Заголовок быстрых настроек</string>
@@ -591,10 +589,20 @@
   <string name="heads_up_time_out_8sec">8 секунд</string>
   <string name="heads_up_time_out_10sec">10 секунд</string>
 
+  <!-- Heads up snooze -->
+  <string name="heads_up_snooze_title">Таймер задержки</string>
+  <string name="heads_up_snooze_summary_one_minute">Свайп вверх по всплывающему уведомлению от этого приложения скроет его на одну минуту</string>
+  <string name="heads_up_snooze_summary">Свайп вверх по всплывающему уведомлению от этого приложения скроет его на <xliff:g id="number">%d</xliff:g> минут</string>
+  <string name="heads_up_snooze_disabled_summary">Таймер режима «Не беспокоить» отключен</string>
+  <string name="heads_up_snooze_1min">1 минут</string>
+  <string name="heads_up_snooze_3min">3 минуты</string>
+  <string name="heads_up_snooze_5min">5 минут</string>
+  <string name="heads_up_snooze_10min">10 минут</string>
+  <string name="heads_up_snooze_15min">15 минут</string>
+  <string name="heads_up_snooze_20min">20 минут</string>
   <!-- One handed mode -->
   <string name="one_handed_mode_title">Режим \"Управление одной рукой\"</string>
   <string name="one_handed_mode_summary">Позволяет свайпом по панели навигации включать режим \"Управление одной рукой\"</string>
-
   <!-- Hide Lockscreen items -->
   <string name="hide_lockscreen_clock_title">Виджет часов</string>
   <string name="hide_lockscreen_clock_summary_on">Отображать часы на экране блокировки</string>
@@ -663,6 +671,7 @@
   <string name="ok">ОК</string>
   <string name="advanced">Дополнительно</string>
   <string name="profiles_add">Добавить...</string>
+  <string name="battery_light_allow_on_dnd_title">Индикация в режиме \"Не беспокоить\"</string>
 
   <!-- Notification light dialogs -->
   <string name="edit_light_settings">Изменение настроек индикатора</string>
@@ -736,10 +745,17 @@
   <string name="volume_steps_reset">По умолчанию</string>
 
   <!-- Fingerprint prefs -->
+  <string name="fingerprint_gestures_category">Жесты</string>
   <string name="fp_unlock_keystore_title">Разблокировка отпечатком</string>
   <string name="fp_unlock_keystore_summary">Разблокировать устройство после перезагрузки без PIN/Пароля/Граф. ключа</string>
   <string name="fprint_sucess_vib_title">Вибрация при распознавании отпечатка</string>
   <string name="fprint_sucess_vib_summary">Вибрировать при успешном распознавании отпечатка пальца</string>
+  <string name="quick_pulldown_fp_title">Свайп сканера отпечатка пальца</string>
+  <string name="quick_pulldown_fp_summary">Раскрывать панель быстрых настроек свайпом по сканеру отпечатка пальца</string>
+  <string name="fp_swipe_call_actions_title">Жесты сканера для вызовов</string>
+  <string name="fp_swipe_call_actions_disabled">Отключено</string>
+  <string name="fp_swipe_call_actions_updown_answer_call">Свайп вверх или вниз, для того чтобы снять трубку</string>
+  <string name="fp_swipe_call_actions_up_answer_down_silence">Свайп вверх - снять трубку, вниз - отключить звук</string>
 
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Открывать плеер</string>
