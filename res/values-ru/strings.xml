@@ -138,8 +138,8 @@
   <string name="pref_scrollingcache_force_disable">Выключить</string>
 
   <!-- Flashlight notification -->
-  <string name="flashlight_notification_title">Уведомление вспышкой</string>
-  <string name="flashlight_notification_summary">Включить уведомление вспышкой о новых сообщениях и вызовах</string>
+  <string name="flashlight_notification_title">Уведомление о фонарике</string>
+  <string name="flashlight_notification_summary">Отображать уведомление при включенном фонарике</string>
 
   <!-- Volume key controls media stream -->
   <string name="volume_keys_control_media_stream_title">Управление медиа</string>
